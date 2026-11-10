@@ -8,9 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const client = new MongoClient(
-  "mongodb+srv://mongo_user:yq8CO5is4OfmGDkb@cluster0.lkvgsgl.mongodb.net/",
-);
+const client = new MongoClient("your mongo uri");
 
 export async function connectToMongoDB() {
   try {
